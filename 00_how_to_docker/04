@@ -1,1 +1,4 @@
+# pull an image
+# docker images to see images
+
 docker pull hello-world

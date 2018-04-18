@@ -1,1 +1,6 @@
-docker run -it --rm alpine sh
+#-t              : Allocate a pseudo-tty
+#-i              : Keep STDIN open even if not attached
+#For interactive processes (like a shell), you must use -i -t together in order to allocate a tty for the container process
+#Specifying -t is forbidden when the client is receiving its standard input from a pipe : $ echo test | docker run -i busybox cat
+
+docker run -it --rm alpine

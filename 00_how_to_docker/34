@@ -1,1 +1,4 @@
+#delete a vr
+#docker-machine ls for see vr
+
 docker-machine rm -f Aiur

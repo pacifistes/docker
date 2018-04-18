@@ -1,1 +1,5 @@
+#docker-machine ls for the all vr install
+# docker-machine env Char for see the configuration
+# this command beloz connect your shel to the new machine
+# docker-machine stop Char for stop
 eval $(docker-machine env Char)

@@ -1,1 +1,6 @@
+#create a container
+# a container image is a lightweightm stand-alone, executable package.
+# docker ps -a to see all containers
+# docker rm -f $(docker ps -a -q) do delte container
+
 docker run hello-world

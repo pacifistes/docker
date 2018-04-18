@@ -1,1 +1,3 @@
+# rm all images
+# docker images to see images
 docker rmi -f $(docker images -q)

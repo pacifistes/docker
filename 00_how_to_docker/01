@@ -1,2 +1,4 @@
 #docker-machine ls
+# docker-machine rm -f for delete
+#creer une vm dans virtualbox du nom de Char
 docker-machine create --driver virtualbox Char

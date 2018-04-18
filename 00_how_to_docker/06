@@ -1,4 +1,6 @@
 # --name flag is how we specify the name of the containe
 # -p specifies the port we are exposing in the format of -p local-machine-port:internal-container-port.
 # -d flag to run this container in the background.
-docker run --name overlord -p 5000:80 -d nginx --restart always
+# --restart flag on Docker run you can specify a restart policy for how a container should or should not be restarted on exit. [no|on-failure|always|unless-stopped]
+# docker ps -a to see all containers
+docker run --name overlord -p 5000:80 -d=true nginx --restart always

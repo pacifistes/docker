@@ -1,1 +1,2 @@
+#recuperer l'addresse ip de la machine
 docker-machine ip Char
