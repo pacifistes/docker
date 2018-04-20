@@ -1,0 +1,4 @@
+#--all , -a		Show all containers (default shows just running)
+#--quiet , -q		Only display numeric IDs
+
+docker ps

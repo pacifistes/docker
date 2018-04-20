@@ -1,0 +1,7 @@
+#on recupere un token avec docker swarm join-token -q worker
+# -q only display token
+# on chanv de vm avec 
+# eval $(docker-machine env Aiur)
+# recupe  host avec docker-machine ls 
+# https://docs.oracle.com/cd/E37670_01/E75728/html/docker-swarm-setup-join.html port a 2377
+docker swarm join --token SWMTKN-1-1wjceiuu79ddmlfapugknikk0v2wgpyh54jnhmhpns2abxpv7n-359kji8vg4klym60xujyke5vw 192.168.99.100:2377

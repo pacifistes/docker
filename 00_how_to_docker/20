@@ -1,0 +1,3 @@
+#docker info
+#docker node ls
+docker swarm init --advertise-addr $(docker-machine ip Char)
