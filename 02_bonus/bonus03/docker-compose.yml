@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+    mysql-container:
+        image: mysql:5.7.21
+        volumes:
+            - hatchery:/var/lib/mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: Kerrigan
+            MYSQL_DATABASE: zerglings
+
+    wordpress:
+        depends_on:
+            - mysql-container
+        image: wordpress
+        ports:
+            - "8080:80"
+        links:
+            - mysql-container:mysql
+
+    phpmyadmin-container:
+        depends_on:
+            - mysql-container
+        image: phpmyadmin/phpmyadmin
+        ports:
+            - "8081:80"
+        links:
+            - mysql-container:db
+volumes:
+    hatchery:

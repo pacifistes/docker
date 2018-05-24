@@ -1,2 +1,3 @@
 #retourne sur char
+# -d pour definir le type
 docker network create -d overlay overmind

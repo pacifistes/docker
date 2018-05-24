@@ -1,3 +1,4 @@
 # docker volume ls
 # docker volume rm
+# docker volume rm $(docker volume ls -q)
 docker volume create hatchery
