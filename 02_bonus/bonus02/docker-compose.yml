@@ -35,5 +35,8 @@ services:
         ports:
             - "8082:80"
             - "1025:25"
+        volumes:
+            - ./relay:/opt
+        command: /usr/src/app/bin/maildev --web 80 --smtp 25 --outgoing-host smtp.gmail.com --outgoing-secure --outgoing-user myEmail --outgoing-pass myEmailpassword --auto-relay --auto-relay-rules /opt/file.json
 volumes:
     mysql-volume:
